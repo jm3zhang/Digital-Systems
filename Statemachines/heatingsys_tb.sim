@@ -1,0 +1,7 @@
+add wave reset
+add wave clk
+add wave cur
+add wave des
+add wave heatmode
+
+run 530 ns
