@@ -1,0 +1,419 @@
+# Info: [9566]: Logging session transcript to file /home/jm3zhang/ece327/proj/precision.log
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux jm3zhang@ecelinux3.uwaterloo.ca #1 SMP Wed May 9 18:05:47 UTC 2018 3.10.0-862.2.3.el7.x86_64 x86_64
+//  
+//  Start time Sun Jul 15 11:17:23 2018
+# -------------------------------------------------
+# Info: [9566]: Logging session transcript to file /home/jm3zhang/ece327/proj/precision.log
+# Info: [9575]: The Results Directory has been set to: /home/jm3zhang/ece327/proj/uw_tmp
+# Info: [9569]: Moving session transcript to file /home/jm3zhang/ece327/proj/uw_tmp/precision.log
+# Info: [15298]: Setting up the design to use synthesis library "max10.syn"
+# Info: [574]: The global max fanout is currently set to 1000 for Altera - MAX 10.
+# Info: [15324]: Setting Part to: "10M08SAE144C8GES".
+# Info: [15325]: Setting Process to: "8".
+# Info: USING DESIGN ARCH
+# Info: [3022]: Reading file: /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/techlibs/max10.syn.
+# Info: [633]: Loading library initialization file /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2015b.13
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2015b.13
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/util.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/mem.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/kirsch_synth_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/syn_fifo.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/kirsch.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/components.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/kirsch_top.vhd" ...
+# Info: [656]: Current working directory: /home/jm3zhang/ece327/proj/uw_tmp.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2015b.13
+# Info: [40000]: Last compiled on Dec 24 2015 14:33:45
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2015b.13
+# Info: [40000]: Last compiled on Dec 24 2015 15:06:12
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.kirsch_top(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Pre-processing...
+# Info: [44506]: Module work.syn_fifo(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Pre-processing...
+# Info: [44506]: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Pre-processing...
+# Info: [45251]: Built-in hardware memory core inferred for variable ': mem.mem depth = 256, width = 8'.
+# Info: [44506]: Module work.uart(main): Pre-processing...
+# Info: [45143]: "/home/jm3zhang/ece327/proj/components.vhd", line 283: Enumerated type TxFSM_State with 5 elements encoded as onehot.
+# Info: [45144]: Encodings for TxFSM_State values.
+# Info: [40000]: value                              	                   TxFSM_State[4-0]
+# Info: [40000]: Idle                               	                         00001
+# Info: [40000]: Load_Tx                            	                         00010
+# Info: [40000]: Shift_TX                           	                         00100
+# Info: [40000]: Parity_Tx                          	                         01000
+# Info: [40000]: Stop_Tx                            	                         10000
+# Info: [45143]: "/home/jm3zhang/ece327/proj/components.vhd", line 286: Enumerated type RxFSM_State with 8 elements encoded as onehot.
+# Info: [45144]: Encodings for RxFSM_State values.
+# Info: [40000]: value                              	                   RxFSM_State[7-0]
+# Info: [40000]: Idle                               	                      00000001
+# Info: [40000]: Start_Rx                           	                      00000010
+# Info: [40000]: Shift_RX                           	                      00000100
+# Info: [40000]: Edge_Rx                            	                      00001000
+# Info: [40000]: Parity_Rx                          	                      00010000
+# Info: [40000]: Parity_2                           	                      00100000
+# Info: [40000]: Stop_Rx                            	                      01000000
+# Info: [40000]: RxOVF                              	                      10000000
+# Info: [40000]: FSM: Removing state for un-assigned literal   00010000
+# Info: [40000]: FSM: Removing state for un-assigned literal   00100000
+# Info: [45144]: Extracted FSM in module work.uart(main), with state variable = RxFSM[7:0], async set/reset state(s) = 00000001 , number of states = 6.
+# Info: [45144]: Re-encoding 6 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	           Idle	                           00000001	                        000001
+# Info: [40000]: FSM:	    1	       Start_Rx	                           00000010	                        000010
+# Info: [40000]: FSM:	    2	        Edge_Rx	                           00001000	                        000100
+# Info: [40000]: FSM:	    3	       Shift_RX	                           00000100	                        001000
+# Info: [40000]: FSM:	    4	        Stop_Rx	                           01000000	                        010000
+# Info: [40000]: FSM:	    5	          RxOVF	                           10000000	                        100000
+# Info: [40000]: FSM: Removing state for un-assigned literal      01000
+# Info: [45144]: Extracted FSM in module work.uart(main), with state variable = TxFSM[4:0], async set/reset state(s) = 00001 , number of states = 4.
+# Info: [45144]: Re-encoding 4 state FSM as "binary".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	           Idle	                              00001	                            00
+# Info: [40000]: FSM:	    1	        Load_Tx	                              00010	                            01
+# Info: [40000]: FSM:	    2	       Shift_TX	                              00100	                            10
+# Info: [40000]: FSM:	    3	        Stop_Tx	                              10000	                            11
+# Info: [44506]: Module work.kirsch(main): Pre-processing...
+# Info: [44506]: Module work.num_seg7(main): Pre-processing...
+# Info: [44506]: Module work.dual_seg7(main): Pre-processing...
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 34: Input port sw has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 35: Input port pb[3:1] has never been used.
+# Warning: [45731]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 40: Output port led has never been assigned a value.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 56: signal k_o_col has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 79: signal pb0_r_edge has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 82: signal wb_full has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 86: signal rb_full has never been used.
+# Info: [44508]: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Compiling...
+# Info: [44508]: Module work.syn_fifo(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Compiling...
+# Info: [44838]: "/home/jm3zhang/ece327/proj/syn_fifo.vhd", line 63: Macro Modgen_Counter "counter_up_sclear_clock_cnt_en_0_8" inferred for node "wr_pointer".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/syn_fifo.vhd", line 73: Macro Modgen_Counter "counter_up_sclear_clock_cnt_en_0_8" inferred for node "rd_pointer".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/syn_fifo.vhd", line 107: Macro Modgen_Counter "counter_updn_sclear_clock_cnt_en_0_9" inferred for node "status_cnt".
+# Info: [44508]: Module work.uart(main): Compiling...
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(8) with RxDivisor(8)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(6) with RxDivisor(6)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(3) with RxDivisor(3)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(2) with RxDivisor(2)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(0) with RxDivisor(0)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(11) with TxDivisor(11)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(9) with TxDivisor(9)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(8) with TxDivisor(8)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(7) with TxDivisor(7)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(5) with TxDivisor(5)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(4) with TxDivisor(4)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(3) with TxDivisor(3)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(1) with TxDivisor(1)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(0) with TxDivisor(0)
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 369: Macro Modgen_Counter "counter_up_sclear_aclear_clock_0_11" inferred for node "RxDiv".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 391: Macro Modgen_Counter "counter_up_sclear_aclear_clock_0_12" inferred for node "TxDiv".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 437: Macro Modgen_Counter "counter_dn_sload_aclear_clock_clk_en_cnt_en_0_4" inferred for node "TxBitCnt".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 521: Macro Modgen_Counter "counter_up_sclear_aclear_clock_clk_en_cnt_en_0_4" inferred for node "RxBitCnt".
+# Info: [44508]: Module work.kirsch(main): Compiling...
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 356: Initial value for dir1[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 357: Initial value for dir1_final[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 358: Initial value for dir2[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 359: Initial value for dir2_final[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 360: Initial value for intermediate_dir[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 362: Initial value for stg_counter1[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 363: Initial value for stg_counter2[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 364: Initial value for max0_bit_counter[1:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 365: Initial value for max1_bit_counter[1:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 372: Initial value for address[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 373: Initial value for row_index[1:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 374: Initial value for row_count[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register b3[7] with a2[7]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register f3[7] with g2[7]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[6] with f3[6]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[6] with b3[6]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[5] with f3[5]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[5] with b3[5]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[4] with f3[4]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[4] with b3[4]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[3] with f3[3]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[3] with b3[3]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[2] with f3[2]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[2] with b3[2]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[1] with f3[1]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[1] with b3[1]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[0] with f3[0]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[0] with b3[0]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 535: Sharing register r_sub0[13] with r_sub0[14]
+# Info: [44838]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 604: Macro Modgen_Counter "counter_up_sclear_clock_clk_en_cnt_en_0_8" inferred for node "next_row_count".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 609: Macro Modgen_Counter "counter_up_sclear_clock_clk_en_cnt_en_0_8" inferred for node "next_address".
+# Info: [44508]: Module work.dual_seg7(main): Compiling...
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 45: Macro Modgen_Counter "counter_up_sclear_clock_0_11" inferred for node "count".
+# Info: [44508]: Module work.num_seg7(main): Compiling...
+# Info: [44523]: Root Module work.kirsch_top(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Compiling...
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) TxDivisor[10] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) TxDivisor[6] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) TxDivisor[2] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) RxDivisor[9] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) RxDivisor[5] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) RxDivisor[1] to constant 0
+# Info: [44846]: Rebalanced Expression Tree...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 15, Inferred (Modgen/Selcounter/AddSub) : 10 (10 / 0 / 0), AcrossDH (Merged/Not-Merged) : (2 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 3), Local Vars : 2 ===
+# Info: [44856]: Total lines of RTL compiled: 1614.
+# Info: [44835]: Total CPU time for compilation: 1.0 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [656]: Current working directory: /home/jm3zhang/ece327/proj/uw_tmp.
+# Info: [15330]: Doing rtl optimizations.
+# Info: [1075]: Constraints: Precision will generate the constraint: create_clock [get_ports clk] -name clk -period 20 -waveform {0 10} on port:clk. Reason: setup_design -frequency. Please override the constraint if needed.
+# Info: [1078]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+# Info: [659]: Finished compiling design.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top_gate.vhd.
+# Info: Info, Command 'auto_write' finished successfully
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top_gate.vhd.
+# Info: Info, Command 'auto_write' finished successfully
+# Info: [656]: Current working directory: /home/jm3zhang/ece327/proj/uw_tmp.
+# Info: [20013]: Precision will use 8 processor(s).
+# Info: #  [15002]: Optimizing design view:.work.mem_8_8.main
+# Info: #  [15002]: Optimizing design view:.work.dual_seg7_notri.main
+# Info: #  [15002]: Optimizing design view:.work.num_seg7_notri.main
+# Info: #  [15002]: Optimizing design view:.work.kirsch_top.main
+# Warning: #  [1621]: Port led(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: #  [1621]: Port led(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: #  [1621]: Port led(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: #  [1621]: Port led(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: #  [1621]: Port led(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: #  [1621]: Port led(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: #  [1621]: Port led(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: #  [1621]: Port led(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Info: #  [15002]: Optimizing design view:.work.syn_fifo_8_8.main_unfold_1927_0
+# Info: #  [15002]: Optimizing design view:.work.syn_fifo_8_8.main_unfold_1
+# Info: #  [15002]: Optimizing design view:.work.uart.main_unfold_1641
+# Info: #  [15002]: Optimizing design view:.work.kirsch.main_unfold_1777
+# Info: [1078]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12047]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.vhd.
+# Info: Info, Writing xrf file '/home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.xrf'
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.xrf.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.v.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.xrf.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.vqm.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.xrf.
+# Info: -- Writing file /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.tcl
+# Info: exq_pr_compile_project gen_vcf kirsch_top 1
+# Info: [659]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 3.6 s secs.
+# Info: [11020]: Overall running time for synthesis: 7.3 s secs.
+# Warning: [16026]: Incremental: Ungroup will not flatten the hard hierarchy instances.
+# Warning: [11029]: Your synthesis will restart from the compile step.
+# Info: [633]: Loading library initialization file /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2015b.13
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2015b.13
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/util.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/mem.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/kirsch_synth_pkg.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/syn_fifo.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/kirsch.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/components.vhd" ...
+# Info: [42502]: Analyzing input file "/home/jm3zhang/ece327/proj/kirsch_top.vhd" ...
+# Info: [656]: Current working directory: /home/jm3zhang/ece327/proj/uw_tmp.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2015b.13
+# Info: [40000]: Last compiled on Dec 24 2015 14:33:45
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2015b.13
+# Info: [40000]: Last compiled on Dec 24 2015 15:06:12
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.kirsch_top(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Pre-processing...
+# Info: [44506]: Module work.syn_fifo(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Pre-processing...
+# Info: [44506]: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Pre-processing...
+# Info: [45251]: Built-in hardware memory core inferred for variable ': mem.mem depth = 256, width = 8'.
+# Info: [44506]: Module work.uart(main): Pre-processing...
+# Info: [45143]: "/home/jm3zhang/ece327/proj/components.vhd", line 283: Enumerated type TxFSM_State with 5 elements encoded as onehot.
+# Info: [45144]: Encodings for TxFSM_State values.
+# Info: [40000]: value                              	                   TxFSM_State[4-0]
+# Info: [40000]: Idle                               	                         00001
+# Info: [40000]: Load_Tx                            	                         00010
+# Info: [40000]: Shift_TX                           	                         00100
+# Info: [40000]: Parity_Tx                          	                         01000
+# Info: [40000]: Stop_Tx                            	                         10000
+# Info: [45143]: "/home/jm3zhang/ece327/proj/components.vhd", line 286: Enumerated type RxFSM_State with 8 elements encoded as onehot.
+# Info: [45144]: Encodings for RxFSM_State values.
+# Info: [40000]: value                              	                   RxFSM_State[7-0]
+# Info: [40000]: Idle                               	                      00000001
+# Info: [40000]: Start_Rx                           	                      00000010
+# Info: [40000]: Shift_RX                           	                      00000100
+# Info: [40000]: Edge_Rx                            	                      00001000
+# Info: [40000]: Parity_Rx                          	                      00010000
+# Info: [40000]: Parity_2                           	                      00100000
+# Info: [40000]: Stop_Rx                            	                      01000000
+# Info: [40000]: RxOVF                              	                      10000000
+# Info: [40000]: FSM: Removing state for un-assigned literal   00010000
+# Info: [40000]: FSM: Removing state for un-assigned literal   00100000
+# Info: [45144]: Extracted FSM in module work.uart(main), with state variable = RxFSM[7:0], async set/reset state(s) = 00000001 , number of states = 6.
+# Info: [45144]: Re-encoding 6 state FSM as "onehot".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	           Idle	                           00000001	                        000001
+# Info: [40000]: FSM:	    1	       Start_Rx	                           00000010	                        000010
+# Info: [40000]: FSM:	    2	        Edge_Rx	                           00001000	                        000100
+# Info: [40000]: FSM:	    3	       Shift_RX	                           00000100	                        001000
+# Info: [40000]: FSM:	    4	        Stop_Rx	                           01000000	                        010000
+# Info: [40000]: FSM:	    5	          RxOVF	                           10000000	                        100000
+# Info: [40000]: FSM: Removing state for un-assigned literal      01000
+# Info: [45144]: Extracted FSM in module work.uart(main), with state variable = TxFSM[4:0], async set/reset state(s) = 00001 , number of states = 4.
+# Info: [45144]: Re-encoding 4 state FSM as "binary".
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	           Idle	                              00001	                            00
+# Info: [40000]: FSM:	    1	        Load_Tx	                              00010	                            01
+# Info: [40000]: FSM:	    2	       Shift_TX	                              00100	                            10
+# Info: [40000]: FSM:	    3	        Stop_Tx	                              10000	                            11
+# Info: [44506]: Module work.kirsch(main): Pre-processing...
+# Info: [44506]: Module work.num_seg7(main): Pre-processing...
+# Info: [44506]: Module work.dual_seg7(main): Pre-processing...
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 34: Input port sw has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 35: Input port pb[3:1] has never been used.
+# Warning: [45731]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 40: Output port led has never been assigned a value.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 56: signal k_o_col has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 79: signal pb0_r_edge has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 82: signal wb_full has never been used.
+# Warning: [45729]: "/home/jm3zhang/ece327/proj/kirsch_top.vhd", line 86: signal rb_full has never been used.
+# Info: [44508]: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Compiling...
+# Info: [44508]: Module work.syn_fifo(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Compiling...
+# Info: [44838]: "/home/jm3zhang/ece327/proj/syn_fifo.vhd", line 63: Macro Modgen_Counter "counter_up_sclear_clock_cnt_en_0_8" inferred for node "wr_pointer".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/syn_fifo.vhd", line 73: Macro Modgen_Counter "counter_up_sclear_clock_cnt_en_0_8" inferred for node "rd_pointer".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/syn_fifo.vhd", line 107: Macro Modgen_Counter "counter_updn_sclear_clock_cnt_en_0_9" inferred for node "status_cnt".
+# Info: [44508]: Module work.uart(main): Compiling...
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(8) with RxDivisor(8)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(6) with RxDivisor(6)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(3) with RxDivisor(3)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(2) with RxDivisor(2)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register RxDivisor(0) with RxDivisor(0)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(11) with TxDivisor(11)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(9) with TxDivisor(9)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(8) with TxDivisor(8)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(7) with TxDivisor(7)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(5) with TxDivisor(5)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(4) with TxDivisor(4)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(3) with TxDivisor(3)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(1) with TxDivisor(1)
+# Info: [44812]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Sharing register TxDivisor(0) with TxDivisor(0)
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 369: Macro Modgen_Counter "counter_up_sclear_aclear_clock_0_11" inferred for node "RxDiv".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 391: Macro Modgen_Counter "counter_up_sclear_aclear_clock_0_12" inferred for node "TxDiv".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 437: Macro Modgen_Counter "counter_dn_sload_aclear_clock_clk_en_cnt_en_0_4" inferred for node "TxBitCnt".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 521: Macro Modgen_Counter "counter_up_sclear_aclear_clock_clk_en_cnt_en_0_4" inferred for node "RxBitCnt".
+# Info: [44508]: Module work.kirsch(main): Compiling...
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 356: Initial value for dir1[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 357: Initial value for dir1_final[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 358: Initial value for dir2[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 359: Initial value for dir2_final[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 360: Initial value for intermediate_dir[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 362: Initial value for stg_counter1[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 363: Initial value for stg_counter2[3:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 364: Initial value for max0_bit_counter[1:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 365: Initial value for max1_bit_counter[1:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 372: Initial value for address[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 373: Initial value for row_index[1:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Warning: [45702]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 374: Initial value for row_count[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register b3[7] with a2[7]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register f3[7] with g2[7]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[6] with f3[6]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[6] with b3[6]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[5] with f3[5]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[5] with b3[5]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[4] with f3[4]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[4] with b3[4]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[3] with f3[3]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[3] with b3[3]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[2] with f3[2]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[2] with b3[2]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[1] with f3[1]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[1] with b3[1]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register g2[0] with f3[0]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 649: Sharing register a2[0] with b3[0]
+# Info: [44812]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 535: Sharing register r_sub0[13] with r_sub0[14]
+# Info: [44838]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 604: Macro Modgen_Counter "counter_up_sclear_clock_clk_en_cnt_en_0_8" inferred for node "next_row_count".
+# Info: [44838]: "/home/jm3zhang/ece327/proj/kirsch.vhd", line 609: Macro Modgen_Counter "counter_up_sclear_clock_clk_en_cnt_en_0_8" inferred for node "next_address".
+# Info: [44508]: Module work.dual_seg7(main): Compiling...
+# Info: [44838]: "/home/jm3zhang/ece327/proj/components.vhd", line 45: Macro Modgen_Counter "counter_up_sclear_clock_0_11" inferred for node "count".
+# Info: [44508]: Module work.num_seg7(main): Compiling...
+# Info: [44523]: Root Module work.kirsch_top(main){generic map (DATA_WIDTH => 8 ADDR_WIDTH => 8)}: Compiling...
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) TxDivisor[10] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) TxDivisor[6] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) TxDivisor[2] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) RxDivisor[9] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) RxDivisor[5] to constant 0
+# Info: [45309]: "/home/jm3zhang/ece327/proj/components.vhd", line 334: Optimizing state bit(s) RxDivisor[1] to constant 0
+# Info: [44846]: Rebalanced Expression Tree...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44841]: Counter Inferencing === Detected : 15, Inferred (Modgen/Selcounter/AddSub) : 10 (10 / 0 / 0), AcrossDH (Merged/Not-Merged) : (2 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 3), Local Vars : 2 ===
+# Info: [44856]: Total lines of RTL compiled: 1614.
+# Info: [44835]: Total CPU time for compilation: 1.0 secs.
+# Info: [44513]: Overall running time for compilation: 2.0 secs.
+# Info: [656]: Current working directory: /home/jm3zhang/ece327/proj/uw_tmp.
+# Info: [15330]: Doing rtl optimizations.
+# Info: [1075]: Constraints: Precision will generate the constraint: create_clock [get_ports clk] -name clk -period 20 -waveform {0 10} on port:clk. Reason: setup_design -frequency. Please override the constraint if needed.
+# Info: [1078]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+# Info: [659]: Finished compiling design.
+# Info: [656]: Current working directory: /home/jm3zhang/ece327/proj/uw_tmp.
+# Info: [4557]: instance:write_fifo.mem Instance is flattened in hierarchical block view:.work.syn_fifo_8_8.main_unfold_1.
+# Info: [4557]: instance:read_fifo.mem Instance is flattened in hierarchical block view:.work.syn_fifo_8_8.main_unfold_1927_0.
+# Info: [4557]: instance:u_kirsch.memA Instance is flattened in hierarchical block view:.work.kirsch.main_unfold_1777.
+# Info: [4557]: instance:u_kirsch.memB Instance is flattened in hierarchical block view:.work.kirsch.main_unfold_1777.
+# Info: [4557]: instance:u_kirsch.memC Instance is flattened in hierarchical block view:.work.kirsch.main_unfold_1777.
+# Info: [4557]: instance:u_seg7.u_dual_seg7 Instance is flattened in hierarchical block view:.work.num_seg7_notri.main.
+# Info: [4557]: instance:write_fifo Instance is flattened in hierarchical block view:.work.kirsch_top.main.
+# Info: [4557]: instance:read_fifo Instance is flattened in hierarchical block view:.work.kirsch_top.main.
+# Info: [4557]: instance:u_seg7 Instance is flattened in hierarchical block view:.work.kirsch_top.main.
+# Info: [4557]: instance:u_uart Instance is flattened in hierarchical block view:.work.kirsch_top.main.
+# Info: [4557]: instance:u_kirsch Instance is flattened in hierarchical block view:.work.kirsch_top.main.
+# Info: [20013]: Precision will use 8 processor(s).
+# Info: [15002]: Optimizing design view:.work.kirsch_top.main
+# Warning: [1621]: Port led(0) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port led(1) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port led(2) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port led(3) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port led(4) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port led(5) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port led(6) is connected to a disabled tristate, possibly unconnected Port in design.
+# Warning: [1621]: Port led(7) is connected to a disabled tristate, possibly unconnected Port in design.
+# Info: [1078]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12047]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.vhd.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.xrf.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.v.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.xrf.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.vqm.
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.xrf.
+# Info: -- Writing file /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top.tcl
+# Info: exq_pr_compile_project gen_vcf kirsch_top 1
+# Info: [659]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 5.6 s secs.
+# Info: [11020]: Overall running time for synthesis: 7.2 s secs.
+# Info: clk
+# Info: 1
+# Info: 0
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top_logic.sdf.
+# Info: [654]: Using verilog names style for SDF.
+# Info: [634]: Do 'set sdf_names_style vhdl' to use vhdl names style for SDF.
+# Info: Info, Writing xrf file 'uw_tmp/kirsch_top_logic.xrf'
+# Info: [3027]: Writing file: /home/jm3zhang/ece327/proj/uw_tmp/kirsch_top_logic.xrf.
+# Info: Info, Command 'auto_write' finished successfully
+# Info: *** logic synthesis succeeded ***

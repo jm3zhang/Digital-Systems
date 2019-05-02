@@ -1,0 +1,2 @@
+uw-sim /home/ece327/bin/uw-sim --logic kirsch.uwp
+ERROR: missing synthesized netlist file: uw_tmp/kirsch_logic_sim.vhd

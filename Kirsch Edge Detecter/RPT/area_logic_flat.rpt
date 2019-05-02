@@ -1,0 +1,156 @@
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux jm3zhang@ecelinux3.uwaterloo.ca #1 SMP Wed May 9 18:05:47 UTC 2018 3.10.0-862.2.3.el7.x86_64 x86_64
+//  
+//  Start time Sun Jul 15 11:17:23 2018
+
+***************************************************************
+Device Utilization for 10M08SAE144C8GES
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               34      -            -
+LUTs                              687     8064      8.52%
+Registers                         415     8064      5.15%
+Memory Bits                       10240   387072    2.65%
+DSP block 9-bit elems             0       48        0.00%
+---------------------------------------------------------------
+
+**************************************************************
+
+Library: OPERATORS    Cell: ram_dq_8_4    View: IMPLEMENTATION
+
+**************************************************************
+
+  Cell                     Library  References     Total Area
+
+ VCC                       max10         1 x
+ altsyncram_8_8_256_2_4    OPERATORS     1 x
+
+ Number of ports :                      32
+ Number of nets :                       27
+ Number of instances :                   2
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of Memory Bits :              2048
+ Number of accumulated instances :       2
+
+**************************************************************
+
+Library: OPERATORS    Cell: ram_dq_8_3    View: IMPLEMENTATION
+
+**************************************************************
+
+  Cell                     Library  References     Total Area
+
+ VCC                       max10         1 x
+ altsyncram_8_8_256_2_3    OPERATORS     1 x
+
+ Number of ports :                      32
+ Number of nets :                       27
+ Number of instances :                   2
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of Memory Bits :              2048
+ Number of accumulated instances :       2
+
+**************************************************************
+
+Library: OPERATORS    Cell: ram_dq_8_2    View: IMPLEMENTATION
+
+**************************************************************
+
+  Cell                     Library  References     Total Area
+
+ VCC                       max10         1 x
+ altsyncram_8_8_256_2_2    OPERATORS     1 x
+
+ Number of ports :                      32
+ Number of nets :                       27
+ Number of instances :                   2
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of Memory Bits :              2048
+ Number of accumulated instances :       2
+
+**************************************************************
+
+Library: OPERATORS    Cell: ram_dq_8_1    View: IMPLEMENTATION
+
+**************************************************************
+
+  Cell                     Library  References     Total Area
+
+ VCC                       max10         1 x
+ altsyncram_8_8_256_2_1    OPERATORS     1 x
+
+ Number of ports :                      32
+ Number of nets :                       27
+ Number of instances :                   2
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of Memory Bits :              2048
+ Number of accumulated instances :       2
+
+**************************************************************
+
+Library: OPERATORS    Cell: ram_dq_8_0    View: IMPLEMENTATION
+
+**************************************************************
+
+  Cell                     Library  References     Total Area
+
+ VCC                       max10         1 x
+ altsyncram_8_8_256_2_0    OPERATORS     1 x
+
+ Number of ports :                      32
+ Number of nets :                       27
+ Number of instances :                   2
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of Memory Bits :              2048
+ Number of accumulated instances :       2
+
+***********************************************
+
+Library: work    Cell: kirsch_top    View: main
+
+***********************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10         1 x
+ NOT                       max10        14 x
+ TRI                       max10        11 x      1     11 TRIs
+ VCC                       max10         1 x
+ dffeas                    max10       415 x      1    415 Registers
+ fiftyfivenm_lcell_comb    max10       687 x      1    687 LUTs
+ ram_dq_8_0                OPERATORS     1 x   2048   2048 Memory Bits
+ ram_dq_8_1                OPERATORS     1 x   2048   2048 Memory Bits
+ ram_dq_8_2                OPERATORS     1 x   2048   2048 Memory Bits
+ ram_dq_8_3                OPERATORS     1 x   2048   2048 Memory Bits
+ ram_dq_8_4                OPERATORS     1 x   2048   2048 Memory Bits
+
+ Number of ports :                      34
+ Number of nets :                     1305
+ Number of instances :                1134
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of LCs :                         0
+ Number of LUTs :                      687
+ Number of Memory Bits :             10240
+ Number of Registers :                 415
+ Number of TRIs :                       11
+ Number of accumulated instances :    1139

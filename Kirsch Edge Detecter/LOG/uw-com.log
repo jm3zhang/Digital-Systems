@@ -1,0 +1,11 @@
+Model Technology ModelSim SE-64 vmap 10.5c Lib Mapping Utility 2016.07 Jul 20 2016
+vmap -c 
+Copying /opt/questa105/modeltech/linux_x86_64/../modelsim.ini to modelsim.ini
+Error: Could not find work.util.
+Error (suppressible): kirsch.vhd(6): (vcom-1195) Cannot find expanded name "work.util".
+Error: kirsch.vhd, line 6: Unknown expanded name.
+Error: Could not find work.kirsch_synth_pkg.
+Error (suppressible): kirsch.vhd(7): (vcom-1195) Cannot find expanded name "work.kirsch_synth_pkg".
+Error: kirsch.vhd, line 7: Unknown expanded name.
+ERROR: Failure (exit code) when running `vcom -2008 -quiet -work work-msim  -suppress vcom-1141 kirsch.vhd'
+ERROR: Failure (error grep) when running `uw-msim-com  kirsch.vhd '

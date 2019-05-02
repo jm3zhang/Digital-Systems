@@ -1,0 +1,23 @@
+BOARD = lstep
+LATENCY = -1
+ERRORS = 
+LOGIC_TA = 219
+DESIGN_ARCH = main
+PHYS_REGS = 415
+PHYS_LUTS = 696
+LOGIC_TIME__ACTUAL_PERIOD = 6.596000
+LOGIC_TIME__ACTUAL_SPEED = 151
+LOGIC_TIME__TIMING_PATHS = ( 6.596000, 6.327000, 0.269000, u_kirsch_...unter2(0), u_kirsch_...dd2(12)/d,  ), ( 6.571000, 6.302000, 0.269000, u_kirsch_...unter2(1), u_kirsch_...dd2(12)/d,  ), ( 6.492000, 6.223000, 0.269000, u_kirsch_...unter2(2), u_kirsch_...dd2(12)/d,  ), ( 6.436000, 6.167000, 0.269000, u_kirsch_...unter1(1), u_kirsch_...dd2(12)/d,  ), ( 6.401000, 6.132000, 0.269000, u_kirsch_...unter1(0), u_kirsch_...dd2(12)/d,  )
+
+PHYS_AREA = 793
+LOGIC_REGS = 417
+PHYS_TA = 135.725095
+OPT_EFFORT = 0
+RPT_DIR = RPT
+LOGIC_AREA = 689
+DESIGN_ENTITY = kirsch_top
+LOGIC_TA_LAT = 219
+PHYS_TIME__ACTUAL_PERIOD = 9.291090
+PHYS_TIME__ACTUAL_SPEED = 107.630000
+
+LOGIC_LUTS = 689

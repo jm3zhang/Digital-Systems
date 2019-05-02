@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Jul 15 11:18:35 2018
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : kirsch_top
+Top-level Entity Name : kirsch_top
+Family : MAX 10
+Device : 10M08SAE144C8G
+Timing Models : Final
+Total logic elements : 741 / 8,064 ( 9 % )
+    Total combinational functions : 699 / 8,064 ( 9 % )
+    Dedicated logic registers : 415 / 8,064 ( 5 % )
+Total registers : 415
+Total pins : 34 / 101 ( 34 % )
+Total virtual pins : 0
+Total memory bits : 10,240 / 387,072 ( 3 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

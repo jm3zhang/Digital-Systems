@@ -1,0 +1,24 @@
+1531667858.273727
+*3192130325
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	KIRSCH_TOP	KIRSCH_TOP	0	1032775621
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	SYN_FIFO	SYN_FIFO	0	335306146
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	MAIN	SYN_FIFO	1	867721765
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	UART	UART	0	2334577728
+IEEE	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+IEEE	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	MAIN	UART	1	3622053833
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	KIRSCH	KIRSCH	0	2484253917
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_UNSIGNED	STD_LOGIC_UNSIGNED	2	0
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	UTIL	UTIL	2	4202305752
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	KIRSCH_SYNTH_PKG	KIRSCH_SYNTH_PKG	2	1428958512
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	MAIN	KIRSCH	1	1210505575
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	NUM_SEG7	NUM_SEG7	0	2148835093
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+work	/home/jm3zhang/ece327/proj/uw_tmp/rtlc_libs/work	MAIN	NUM_SEG7	1	2405325824

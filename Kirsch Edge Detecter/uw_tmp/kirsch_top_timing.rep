@@ -1,0 +1,136 @@
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux jm3zhang@ecelinux3.uwaterloo.ca #1 SMP Wed May 9 18:05:47 UTC 2018 3.10.0-862.2.3.el7.x86_64 x86_64
+//  
+//  Start time Sun Jul 15 11:17:23 2018
+
+-- Device: Altera - MAX 10 : 10M08SAE144C8GES : 8
+-- CTE report summary..
+-- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+
+================================================================================================
+                   Clock Frequency Report
+
+	Domain                  Clock Name                            Min Period (Freq)             Required Period (Freq)
+	------                  ----------                            -----------------             ----------------------
+	xmplr_ClockDomain_clk   clk                                   6.596 (151.607 MHz)           20.000 (50.000 MHz)
+
+
+================================================================================================
+Setup Timing Analysis of clk
+
+Setup Slack Path Summary
+
+               Data                                                                               Data
+       Setup   Path   Source  Dest.                                                               End 
+Index  Slack   Delay  Clock   Clock           Data Start Pin                 Data End Pin         Edge
+-----  ------  -----  ------  -----  --------------------------------  -------------------------  ----
+  1    13.404  6.327  clk     clk    u_kirsch_reg_stg_counter2(0)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  2    13.429  6.302  clk     clk    u_kirsch_reg_stg_counter2(1)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  3    13.508  6.223  clk     clk    u_kirsch_reg_stg_counter2(2)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  4    13.564  6.167  clk     clk    u_kirsch_reg_stg_counter1(1)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  5    13.599  6.132  clk     clk    u_kirsch_reg_stg_counter1(0)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  6    13.658  6.073  clk     clk    u_kirsch_reg_stg_counter2(3)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  7    13.703  6.028  clk     clk    u_kirsch_reg_stg_counter1(2)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  8    13.743  5.988  clk     clk    u_kirsch_reg_stg_counter1(3)/clk  u_kirsch_reg_r_add2(12)/d  Rise
+  9    14.056  5.675  clk     clk    reg_q(4)_dup_45/clk               reg_q(8)_dup_41/d          Rise
+ 10    14.061  5.670  clk     clk    reg_q(3)_dup_46/clk               reg_q(8)_dup_41/d          Rise
+
+                  CTE Path Report
+
+
+Critical path #1, (path slack = 13.404):
+
+SOURCE CLOCK: name: clk period: 20.000000
+     Times are relative to the 1st rising edge
+  DEST CLOCK: name: clk period: 20.000000
+     Times are relative to the 2nd rising edge
+
+NAME                                           GATE                       DELAY    ARRIVAL DIR  FANOUT
+u_kirsch_reg_stg_counter2(0)/clk            dffeas                                 0.000   up
+u_kirsch_reg_stg_counter2(0)/q              dffeas                       0.530     0.530   up
+u_kirsch_stg_counter2(0)                    (net)                        0.520                  12
+ix41042z7105/dataa                          fiftyfivenm_lcell_comb                 1.050   up
+ix41042z7105/combout                        fiftyfivenm_lcell_comb       0.491     1.541   up
+nx41042z10                                  (net)                        0.630                  16
+ix38950z7098/dataa                          fiftyfivenm_lcell_comb                 2.171   up
+ix38950z7098/combout                        fiftyfivenm_lcell_comb       0.491     2.662   up
+nx38950z2                                   (net)                        0.430                   9
+ix52980z7096/datab                          fiftyfivenm_lcell_comb                 3.092   up
+ix52980z7096/combout                        fiftyfivenm_lcell_comb       0.496     3.588   up
+u_kirsch_r_add2_4n1s1f2(1)                  (net)                        0.200                   1
+u_kirsch_r_add2_add13_4i1_ix55_fadd/datab   fiftyfivenm_lcell_comb                 3.788   up
+u_kirsch_r_add2_add13_4i1_ix55_fadd/cout    fiftyfivenm_lcell_comb       0.565     4.353   up
+nx21832z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix59_fadd/cin     fiftyfivenm_lcell_comb                 4.353   up
+u_kirsch_r_add2_add13_4i1_ix59_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.432   up
+nx27373z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix63_fadd/cin     fiftyfivenm_lcell_comb                 4.432   up
+u_kirsch_r_add2_add13_4i1_ix63_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.511   up
+nx58521z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix67_fadd/cin     fiftyfivenm_lcell_comb                 4.511   up
+u_kirsch_r_add2_add13_4i1_ix67_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.590   up
+nx23346z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix71_fadd/cin     fiftyfivenm_lcell_comb                 4.590   up
+u_kirsch_r_add2_add13_4i1_ix71_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.669   up
+nx7802z1                                    (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix75_fadd/cin     fiftyfivenm_lcell_comb                 4.669   up
+u_kirsch_r_add2_add13_4i1_ix75_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.748   up
+nx38950z5                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix79_fadd/cin     fiftyfivenm_lcell_comb                 4.748   up
+u_kirsch_r_add2_add13_4i1_ix79_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.827   up
+nx42917z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix83_fadd/cin     fiftyfivenm_lcell_comb                 4.827   up
+u_kirsch_r_add2_add13_4i1_ix83_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.906   up
+nx11769z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix87_fadd/cin     fiftyfivenm_lcell_comb                 4.906   up
+u_kirsch_r_add2_add13_4i1_ix87_fadd/cout    fiftyfivenm_lcell_comb       0.079     4.985   up
+nx37436z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix91_fadd/cin     fiftyfivenm_lcell_comb                 4.985   up
+u_kirsch_r_add2_add13_4i1_ix91_fadd/cout    fiftyfivenm_lcell_comb       0.079     5.064   up
+nx62488z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix95_fadd/cin     fiftyfivenm_lcell_comb                 5.064   up
+u_kirsch_r_add2_add13_4i1_ix95_fadd/cout    fiftyfivenm_lcell_comb       0.079     5.143   up
+nx46914z1                                   (net)                        0.000                   1
+u_kirsch_r_add2_add13_4i1_ix97_fadd/cin     fiftyfivenm_lcell_comb                 5.143   up
+u_kirsch_r_add2_add13_4i1_ix97_fadd/combout fiftyfivenm_lcell_comb       0.607     5.750   up
+u_kirsch_r_add2_4n1s1(12)                   (net)                        0.200                   1
+ix55984z7095/datad                          fiftyfivenm_lcell_comb                 5.950   up
+ix55984z7095/combout                        fiftyfivenm_lcell_comb       0.177     6.127   up
+nx55984z1                                   (net)                        0.200                   1
+u_kirsch_reg_r_add2(12)/d                   dffeas                                 6.327   up
+
+		Initial edge separation:     20.000
+		Source clock delay:      -    0.000
+		Dest clock delay:        +    0.000
+		                        -----------
+		Edge separation:             20.000
+		Setup constraint:        -    0.269
+		                        -----------
+		Data required time:          19.731
+		Data arrival time:       -    6.327   ( 65.54% cell delay, 34.46% net delay )
+		                        -----------
+		Slack:                       13.404
+
+
+
+================================================================================================
+                   Input Delay Report
+
+	Input                  Clock Name                            Slack (ns)
+	-----                  ----------                            ----------
+	No input delay constraints.
+
+
+================================================================================================
+                   Output Delay Report
+
+	Output                 Clock Name                            Slack (ns)
+	------                 ----------                            ----------
+	No output delay constraints.
