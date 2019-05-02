@@ -1,0 +1,294 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jm3zhang/ece327/lab3
+T_opt
+!s110 1529890805
+VbPJKbLZZ[K=:^Qf[UMX0N1
+Z1 04 7 4 work lab3_tb main 1
+=1-000ae431a4f1-5b3047f5-8d3ac-540e2
+o-quiet -auto_acc_if_foreign -work work-msim -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_mf -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/lpm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_primitives -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm-enc -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/maxv -warning 3250,3894 -g /lab3_tb/period=20 -g /lab3_tb/test_num=2 -debugdb +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.5c;63
+R0
+T_opt1
+!s110 1529890875
+VR^``_b3=ICe]_oRn=^3f<3
+R1
+=1-000ae431a4f1-5b30483b-64c6d-54191
+o-quiet -auto_acc_if_foreign -work work-msim -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_mf -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/lpm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_primitives -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm-enc -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/maxv -warning 3250,3894 -g /lab3_tb/period=20 -g /lab3_tb/test_num=1 -debugdb +acc
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1529892422
+Vz@89M5RVkk4ZBeWPI2A^B3
+R1
+=1-000ae431a4f1-5b304e46-27f2f-553c7
+o-quiet -auto_acc_if_foreign -work work-msim -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_mf -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/lpm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_primitives -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm-enc -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/maxv -warning 3250,3894 -g /lab3_tb/period=20 -g /lab3_tb/test_num=4 -debugdb +acc
+R2
+n@_opt2
+R3
+Elab3
+Z4 w1529890714
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8lab3.vhd
+Z9 Flab3.vhd
+l0
+L5
+VIGR2d1cK^2E^ZlHJfPQW;0
+!s100 RAfi6FP;2AdM`fOi=GelQ3
+Z10 OL;C;10.5c;63
+33
+Z11 !s110 1529892415
+!i10b 1
+Z12 !s108 1529892415.000000
+Z13 !s90 -2008|-quiet|-work|work-msim|-suppress|vcom-1141|util.vhd|mem.vhd|lab3.vhd|util_unsynth.vhd|lab3_unsynth_pkg.vhd|lab3_tb.vhd|
+Z14 !s107 lab3_tb.vhd|lab3_unsynth_pkg.vhd|util_unsynth.vhd|lab3.vhd|mem.vhd|util.vhd|
+!i113 0
+Z15 o-suppress vcom-1141 -quiet -2008 -work work-msim
+Z16 tExplicit 1 CvgOpt 0
+Amain
+Z17 DEx4 work 3 mem 0 22 4S>QOnNIF[Y31PIkU;_RT3
+R5
+R6
+R7
+Z18 DEx4 work 4 lab3 0 22 IGR2d1cK^2E^ZlHJfPQW;0
+l31
+L16
+V>Bh`e:D<MmL>89zSn@a]M2
+!s100 d@80U:Tc4i9B<@<M6<zR;1
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Elab3_tb
+Z19 w1529811469
+Z20 DPx4 work 16 lab3_unsynth_pkg 0 22 5Xl4KSV`SdzT_K@2cMo6V3
+Z21 DPx4 work 12 util_unsynth 0 22 Vdof<GXJohm;4HjLo6lz[3
+R5
+R6
+R7
+R0
+Z22 8lab3_tb.vhd
+Z23 Flab3_tb.vhd
+l0
+L12
+VaUfc@jA]BU?cZ6TC4MY7T0
+!s100 J>NiLW=am7iVR79IkCbAQ2
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Amain
+R18
+R20
+R21
+R5
+R6
+R7
+DEx4 work 7 lab3_tb 0 22 aUfc@jA]BU?cZ6TC4MY7T0
+l67
+L19
+VSK?_C745LdSWRNoCMj7Pl3
+!s100 l6HTBYh60e>d_1DomLfWK3
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Plab3_unsynth_pkg
+R5
+R6
+R7
+R19
+R0
+Z24 8lab3_unsynth_pkg.vhd
+Z25 Flab3_unsynth_pkg.vhd
+l0
+L16
+V5Xl4KSV`SdzT_K@2cMo6V3
+!s100 kgYNff>3L;QCE=F6G4T0f0
+R10
+33
+b1
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Bbody
+R20
+R5
+R6
+R7
+l0
+L39
+VCnB0l1]kFVS^1Dm`I;nF@2
+!s100 ZS?>623Xl:D7Q?B4omE3T2
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Emem
+Z26 w1529811468
+R5
+R6
+R7
+R0
+Z27 8mem.vhd
+Z28 Fmem.vhd
+l0
+L5
+V4S>QOnNIF[Y31PIkU;_RT3
+!s100 iOi553^K`ZDzAS1e6kZD90
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Amain
+R5
+R6
+R7
+R17
+l26
+L20
+VdID3>`O3GEKVhT^5INaeW2
+!s100 YmV=EPS2z4CDe;S0SZfAK2
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Putil
+R5
+R6
+R7
+R19
+R0
+Z29 8util.vhd
+Z30 Futil.vhd
+l0
+L5
+VYISjFoX1MUM>jDHgeMWjG0
+!s100 `HL3OKFc0c_G_aX=5T=iP0
+R10
+33
+b1
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Bbody
+DPx4 work 4 util 0 22 YISjFoX1MUM>jDHgeMWjG0
+R5
+R6
+R7
+l0
+L17
+Vm]?3zE^lGVhUn?ChT3mVE3
+!s100 V45@=Be6R=j]dWAhPlhMO3
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Putil_unsynth
+R5
+R7
+R6
+R19
+R0
+Z31 8util_unsynth.vhd
+Z32 Futil_unsynth.vhd
+l0
+L8
+VVdof<GXJohm;4HjLo6lz[3
+!s100 `[1PzH_fQ4V@6UgRA4=DB3
+R10
+33
+b1
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Bbody
+R21
+R5
+R7
+R6
+l0
+L19
+VhUZFbF5FTWKHH>ng<Jc<R0
+!s100 KN1bYSUZK]hX4NXFAgUD=3
+R10
+33
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
